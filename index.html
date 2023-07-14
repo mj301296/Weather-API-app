@@ -5,9 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="src/script.js" defer></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>Weather-App</title>
 </head>
 <body>
+    <main>
+        <div class="container">
+            <div class="general">
+                <div id="loc_status"> Overcast clouds</div>
+                <div id="loc_name">London</div>
+                <div id="loc_date">Sunday, 28th Feb'21</div>
+                <div id="loc_time">6:13 pm</div>
+                <div id="temp">26 <sup>o</sup>C</div>
+                <div id="loc_status_img"> </div>
+                <form>
+                    <input class="search_bar" placeholder="Search location..."></input>
+                    <button type="submit"><img src="./src/images/search-icon.png"></button>
+                </form>
+            </div>
+            <div class="overview">
+                <div class="o_elements">
+                    <div class="temp logo">
+                        <img src="./src/images/thermo.svg">
+                    </div>
+                    <div class="element_info">
+                        <div>Feels Like</div>
+                        <div class="e_value">25 <sup>o</sup>C</div>
+                    </div>
+                </div>
+                <div class="o_elements">
+                    <div class="humidity logo">
+                        <img src="./src/images/humidity.svg">
+                    </div>
+                    <div class="element_info">
+                        <div>Humidity</div>
+                        <div class="e_value">75%</div>
+                    </div>
+                </div>
+                <div class="o_elements">
+                    <div class="rain logo">
+                        <img src="./src/images/rainy.svg">
+                    </div>
+                    <div class="element_info">
+                        <div>Chance of Rain</div>
+                        <div class="e_value">72%</div>
+                    </div>
+                </div>
+                <div class="o_elements">
+                    <div class="wind logo">
+                        <img src="./src/images/wind.svg">
+                    </div>
+                    <div class="element_info">
+                        <div>Wind Speed</div>
+                        <div class="e_value">18.5 km/hr</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="details">
+                <div class="switch-field">
+                    <input type="radio" name="selct-sign" id="select-x" class="sign-selector">
+                    <label for="select-x">Daily</label>
+                    <input type="radio" name="selct-sign" id="select-o" class="sign-selector" checked>
+                    <label for="select-o">Hourly</label>
+                </div>
+                <div class="report">
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                    <div class="weather_details">
+                        <div class="day">Saturday</div>
+                        <div class="temperature">
+                            <div class="high">26<sup>o</sup>C</div>
+                            <div class="low">12<sup>o</sup>C</div>
+                        </div>
+                        <div class="temp_state"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
     
 </body>
 </html>

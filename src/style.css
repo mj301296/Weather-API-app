@@ -1,6 +1,188 @@
-body{
-    background-image: url(./images/bg.jpg);
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
+:root {
+    --white: #f5f5f5;
 }
+
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Outfit', sans-serif;
+    place-items: center;
+    letter-spacing: .08em;
+    color: var(--white);
+    font-size: 10px;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 0.75fr 1fr ;
+    height:100vh;
+    padding:2% 5%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+}
+
+
+#loc_status_img{
+    background-image: url(./images/cloudy.svg);
+    background-repeat: no-repeat;
+    height: 3rem;
+}
+
+#loc_status{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+#loc_name{
+    padding: 2% 0%;
+    font-size: 15px;
+}
+
+#temp {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5% 0%;
+}
+
+
+.search_bar{
+    width: 7rem;
+    height: 2rem;
+    background: transparent;
+    border: hidden;
+    color: var(--white);
+    background-color: transparent;
+    border: hidden;
+    border-bottom: 1px solid #f4f5fc;
+    padding: 2%;
+}
+
+.search_bar::placeholder{
+    color:var(--white);
+}
+
+form{
+    display:flex;
+}
+
+img{
+    background: transparent;
+    max-width: 15px;
+}
+
+button{
+    background: transparent;
+    border:hidden;
+    border-bottom: 1px solid #f4f5fc;
+}
+
+.overview{
+    display: flex;
+    /* justify-content: end; */
+    flex-direction: column;
+    gap:30px;
+    
+}
+
+.o_elements{
+    display:grid;
+    grid-template-columns: 0.40fr 1fr;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img{
+    max-width: 25px;
+}
+
+.e_value{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.switch-field {
+    display: grid;
+    overflow: hidden;
+    background: hidden;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0% 30% 5% 30%;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+    display: flex;
+    justify-content: center;
+	text-align: center;
+	margin-right: -1px;
+	transition: all 0.1s ease-in-out;
+    padding: 2% 0%;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    border: solid;
+
+}
+
+
+.report{
+    padding: 0% 15%;
+    display: grid;
+    gap:8px;
+}
+
+
+.weather_details{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex: 1 1 0%;
+}
+
+.weather_details .day{
+    font-size: 14px;
+    flex: 2;
+}
+
+
+.weather_details .temp_state{
+    background-image: url(./images/cloudy.svg);
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.temperature .high{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
